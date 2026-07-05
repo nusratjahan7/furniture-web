@@ -1,0 +1,515 @@
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ----------- */
+
+/* navbar  */
+
+.custom-navbar {
+    background-color: #ffffff;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.custom-navbar .navbar-brand {
+    color: #004d73;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.custom-navbar .nav-link {
+    color: #4a5568 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #004d73 !important;
+}
+
+/* Banner */
+
+.furniture-banner {
+    background: url('../images/banner.png') no-repeat center center;
+    background-size: cover;
+    min-height: 88vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.banner-layout-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+.promo-card {
+    background-color: #e6eef8;
+    padding: 3rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.promo-card .sub-title {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.promo-card .main-title {
+    color: #004d73;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.promo-card .description {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+
+.promo-card .btn-buy {
+    display: inline-block;
+    background-color: #004d73;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.9rem 2.5rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.promo-card .btn-buy:hover {
+    background-color: #003652;
+    color: #ffffff;
+}
+
+/* stats */
+
+.features-section {
+    background-color: #f2f6fc;
+    padding: 2.5rem 0;
+}
+
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+
+.feature-icon svg {
+    width: 44px;
+    height: 44px;
+    color: #1e293b;
+
+    stroke-width: 1.25px;
+
+}
+
+
+.feature-text h3 {
+    color: #1e293b;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 0.15rem 0;
+
+}
+
+.feature-text p {
+    color: #64748b;
+    font-size: 0.85rem;
+    margin: 8px 0 0 0;
+}
+
+/* inspiration */
+.inspiration-section {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.inspiration-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.inspiration-header h2 {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.inspiration-header p {
+    color: #777777;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.inspiration-grid {
+    display: flex;
+    align-items: center;
+}
+
+.inspiration-card {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.inspiration-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-left-rounded img {
+    border-top-left-radius: 60px;
+    aspect-ratio: 1 / 1;
+}
+
+.img-tall img {
+    aspect-ratio: 4 / 5;
+}
+
+.img-right-rounded img {
+    border-bottom-right-radius: 60px;
+    aspect-ratio: 1 / 1;
+}
+
+.beautify-section {
+    background-color: #f6f9fe;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.beautify-row {
+    display: flex;
+    align-items: center;
+}
+
+.beautify-content {
+    padding-right: 2rem;
+}
+
+.beautify-content h2 {
+    color: #333333;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.beautify-content p {
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 480px;
+}
+
+.beautify-content .btn-learn {
+    display: inline-block;
+    background-color: #0c4a70;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.beautify-content .btn-learn:hover {
+    background-color: #07314d;
+}
+
+.beautify-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-image {
+    position: relative;
+    z-index: 2;
+    width: 85%;
+    max-width: 400px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.bg-shape {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    background-color: #064e3b;
+    border-radius: 100%;
+}
+
+.browse-range-section {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.range-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.range-header h2 {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.range-header p {
+    color: #777777;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.range-grid {
+    row-gap: 2rem;
+}
+
+.range-card {
+    text-align: center;
+    width: 100%;
+}
+
+.range-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.range-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.range-card:hover .range-image img {
+    transform: scale(1.03);
+}
+
+.range-card h3 {
+    color: #333333;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.range-card p {
+    color: #333333a4;
+    font-size: 12px;
+    padding-top: 8px;
+    line-height: 15px;
+}
+
+
+.footer-wrapper {
+    width: 100%;
+}
+
+/* Newsletter Styles */
+.newsletter-section {
+    background-color: #f6f9fe;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.newsletter-content p {
+    color: #666666;
+    font-size: 0.95rem;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 520px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 1px solid #d1d5db;
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.newsletter-form input::placeholder {
+    color: #b9adc9;
+    opacity: 0.6;
+}
+
+.newsletter-form button {
+    background-color: #0c4a70;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0 2.5rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #07314d;
+}
+
+/* Main Footer Styles */
+.main-footer {
+    background-color: #022e44;
+    color: #ffffff;
+    padding: 4.5rem 0;
+}
+
+.footer-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-brand-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.footer-brand-info p {
+    color: #a0aec0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.footer-brand-info h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.instagram-shop-wrapper h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.instagram-item {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.instagram-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}

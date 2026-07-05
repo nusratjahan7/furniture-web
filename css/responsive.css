@@ -1,0 +1,96 @@
+/* Extra large devices  */
+@media (min-width: 1200px) {}
+
+
+/* Large devices  */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* Medium devices  */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Small devices  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .furniture-banner {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .banner-layout-row {
+        justify-content: center;
+    }
+
+    .promo-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .promo-card .main-title {
+        font-size: 2rem;
+    }
+
+    .feature-item {
+        margin-bottom: 1.5rem;
+        justify-content: flex-start;
+    }
+
+    .beautify-row {
+        flex-direction: column-reverse;
+        row-gap: 4rem;
+    }
+
+    .beautify-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .beautify-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bg-shape {
+        right: -20px;
+        width: 140px;
+        height: 240px;
+    }
+
+    .newsletter-section {
+        padding: 3.5rem 0;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        row-gap: 1rem;
+        box-shadow: none;
+    }
+
+    .newsletter-form input {
+        border-right: 1px solid #d1d5db;
+        border-radius: 4px;
+    }
+
+    .newsletter-form button {
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .main-footer {
+        padding: 3.5rem 0;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .footer-brand-info p {
+        padding-right: 0;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra small devices  */
+@media (min-width: 320px) and (max-width: 575.98px) {}
